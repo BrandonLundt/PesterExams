@@ -1,0 +1,79 @@
+﻿{
+	"ClientAccessArray": [
+		{
+			"Name" : "CAS Array",
+			"Site" : "CAS-US",
+			"Fqdn" : "outlook.contoso.com",
+			"Members": ["srv01","srv02","srv03"]
+		}
+	],
+	"ClientAccessServers":  [
+		{ "ComputerName":  "srv01",
+			"WebServiceInternalURL":  "https://outlook-amer.contoso.com/ews/exchange.asmx",
+			"WebServiceExternalURL":  "https://outlook.contoso.com/ews/exchange.asmx",
+			"ECPInternalURL": "https://outlook-amer.contoso.com/ecp",
+			"ECPExternalURL": "https://outlook.contoso.com/ecp",
+			"AutoDiscoverInternalURL": "https://outlook-amer.contoso.com/Autodiscover/Autodiscover.xml",
+			"OWAInternalURL" : "https://outlook-amer.contoso.com/owa",
+			"OWAExternalURL" : "https://outlook.contoso.com/owa"
+		},
+		{ "ComputerName":  "srv02",
+			"WebServiceInternalURL":  "https://outlook-amer.contoso.com/ews/exchange.asmx",
+			"WebServiceExternalURL":  "https://outlook.contoso.com/ews/exchange.asmx",
+			"ECPInternalURL": "https://outlook-amer.contoso.com/ecp",
+			"ECPExternalURL": "https://outlook.contoso.com/ecp",
+			"AutoDiscoverInternalURL": "https://outlook-amer.contoso.com/Autodiscover/Autodiscover.xml",
+			"OWAInternalURL" : "https://outlook-amer.contoso.com/owa",
+			"OWAExternalURL" : "https://outlook.contoso.com/owa"
+		},
+		{ "ComputerName":  "srv03",
+			"WebServiceInternalURL":  "https://outlook-amer.contoso.com/ews/exchange.asmx",
+			"WebServiceExternalURL":  "https://outlook.contoso.com/ews/exchange.asmx",
+			"ECPInternalURL": "https://outlook-amer.contoso.com/ecp",
+			"ECPExternalURL": "https://outlook.contoso.com/ecp",
+			"AutoDiscoverInternalURL": "https://outlook-amer.contoso.com/Autodiscover/Autodiscover.xml",
+			"OWAInternalURL" : "https://outlook-amer.contoso.com/owa",
+			"OWAExternalURL" : "https://outlook.contoso.com/owa"
+		}
+	],
+	"DNS" : [
+		{ 
+			"Name" : "outlook.contoso.com",
+			"InternalIP" : "151.101.64.67",
+			"ExternalIP" : "151.101.65.140"
+		},
+		{ 
+			"Name" : "outlook-amer.contoso.com",
+			"InternalIP" : "151.101.128.67",
+			"ExternalIP" : "151.101.193.140"
+		}
+	],
+	"MailboxDatabase" : [
+		{
+			"Name" : "MailboxDatabase01",
+			"PrimaryServer": "srv04"
+		},
+		{
+			"Name" : "MailboxDatabase02",
+			"PrimaryServer": "srv05"
+		},
+		{
+			"Name" : "MailboxDatabase03",
+			"PrimaryServer": "srv06"
+		}
+	],
+	"MailboxServer" : [
+		{
+			"ComputerName":"srv04",
+			"Services": ["ClusSvc","WinRM"]
+		},
+		{
+			"ComputerName":"srv05",
+			"Services": ["ClusSvc","WinRM"]
+		},
+		{
+			"ComputerName":"srv06",
+			"Services": ["ClusSvc","WinRM"]
+		}
+	]
+}
