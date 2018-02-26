@@ -1,0 +1,26 @@
+﻿{
+    "ComputerName" : [
+        {
+            "Name" : "Atlas",
+            "Service" : [
+                {
+                    "Name" : "Sense",
+                    "StartMode" : "Manual",
+                    "State" : "Stopped",
+                    "Status" : "OK"
+                }
+            ]
+        },
+        {
+            "Name" : "Atlas",
+            "Service" : [
+                {
+                    "Name" : "Sense",
+                    "StartMode" : "Manual",
+                    "State" : "Stopped",
+                    "Status" : "OK"
+                }
+            ]
+        }
+    ]
+}
